@@ -1,0 +1,18 @@
+{
+    "directory":[
+        {
+            "id":1,
+            "name":"NoorFaisal",
+            "email":"nf@email.com",
+            "number":"34324234",
+            "designation":"CEO"
+        },
+        {
+            "id":2,
+            "name":"SalamnThoufiq",
+            "email":"nf@email.com",
+            "number":"34324234",
+            "designation":"CEO"
+        }
+    ]
+}
