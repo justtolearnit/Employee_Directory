@@ -2,7 +2,7 @@ Employee Directory
 
 S1->Id Name Designation Mobile Email 
 Features -> CRUD, Search Filter.
-Using -> Postgresql, Nodejs, Express, React
+Using -> React + JsonServer
 
 <!-- POSTGRESQL OPERATIONS>>>>
  CREATE SEQUENCE employee_sequence INCREMENT 1 START 1;
