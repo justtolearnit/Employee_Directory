@@ -1,20 +1,29 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const ListDirectory = (props) => {
     const toMapDirectories = (props.directories.map((info) => {
         const { id, name, email, number, designation } = info;
-        const clicked = () => {
-            props.editHandler({id});
+        const deleteButton = () => {
+            props.deleteHandler({ id });
         }
+
         return (
-            <div key={id} >
-                <h1>{name}{id}</h1>
-                <button onClick={clicked}>Edit</button>
+            <div>
+
+                <div key={id} >
+                    <h1>{name}{id}</h1>
+                    <button onClick={deleteButton}>Delete</button>
+                    <Link to={{ pathname: "/edit", state: { details: info } }}><button>Edit</button></Link>
+                </div>
             </div>
         )
     }))
     return (
-        <div>{toMapDirectories}</div>
+        <div>
+            <Link to="/add"><button>Add Employee</button></Link>
+            {toMapDirectories}
+        </div>
     )
 
 }

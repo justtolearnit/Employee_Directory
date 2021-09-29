@@ -1,11 +1,30 @@
 {
   "directory": [
     {
+      "id": 1,
       "name": "Pendrive",
       "email": "pen@drive.com",
-      "mobile": "6894457",
-      "designation": "Helper",
-      "id": 1
+      "designation": "Helper"
+    },
+    {
+      "name": "Rilwan",
+      "email": "",
+      "mobile": "",
+      "designation": "",
+      "id": 12
+    },
+    {
+      "id": 13,
+      "name": "KSAR.Ahamed",
+      "email": "ahamed@ahamed.com",
+      "designation": "Cute",
+      "mobile": "9845467215"
+    },
+    {
+      "id": 14,
+      "name": "NoorFaisal",
+      "email": "jelly@gmail.com",
+      "designation": "CTI"
     }
   ]
 }
