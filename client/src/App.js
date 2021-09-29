@@ -11,7 +11,9 @@ function App() {
 
 //posttoapi
   const addEmployeeData = async (props) => {
+    //{props} using curly generates id automatically
     await api.post("/directory",{...props});
+
     toGetDirectories();
   }
 
