@@ -26,14 +26,21 @@ function App() {
   useEffect((
     toGetDirectories
   ),[])
-
-
   // getapi
   
+
+
+  // editing
+  const editHandler = async (props) =>{
+    const key = props.id;
+    await api.delete(`/directory/${key}`);
+    toGetDirectories();
+  }
+
   return (
     <div >
       <UploadDirectory addEmployeeData={addEmployeeData}/>
-      <ListDirectory directories={directories}/>
+      <ListDirectory directories={directories} editHandler={editHandler}/>
     </div>
 
   );
