@@ -11,7 +11,9 @@ import EditDirectory from "./directory/EditDirectory";
 
 
 function App() {
-  const [directories, setDirectory] = useState([""])
+  const [directories, setDirectory] = useState([""]);
+  const [searchTerm,setSearchTerm] = useState([]);
+  const [searchResult,setSearchResult] = useState([]);
 
   //posttoapi
   const addEmployeeData = async (props) => {
@@ -41,15 +43,24 @@ function App() {
     toGetDirectories();
   }
 
-  const editHandler = async (props) => {
-    
+  const searchHandler = (props) =>{
+    setSearchTerm(props);
+    if(searchTerm !== ""){
+      const newDirectories = directories.filter((directory)=>{
+        return Object.values(directory).join("").toLocaleLowerCase().includes(searchTerm.toString().toLocaleLowerCase());
+      });
+      setSearchResult(newDirectories);
+    }
+    else{
+      setSearchResult(directories);
+    }
   }
 
   return (
     <div >
       
       <Router>
-        <Route path="/" render={(props) => <ListDirectory {...props} directories={directories} deleteHandler={deleteHandler} />} exact />
+        <Route path="/" render={(props) => <ListDirectory {...props} directories={searchTerm < 1 ? directories : searchResult} deleteHandler={deleteHandler} searchHandler={searchHandler} term={searchTerm}/>} exact />
         <Route path="/add"> <UploadDirectory addEmployeeData={addEmployeeData} /></Route>
         <Route path="/edit" render={(props) => <EditDirectory {...props}  toGetDirectories={toGetDirectories} />} exact />
       </Router>

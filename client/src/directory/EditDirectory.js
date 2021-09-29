@@ -3,23 +3,23 @@ import { Link } from 'react-router-dom';
 import api from '../api/directory';
 class EditDirectory extends Component {
 
-    constructor(props){
+    constructor(props) {
         super(props)
-        const {id,name,email,number,designation}=props.location.state.details;
+        const { id, name, email, number, designation } = props.location.state.details;
         this.state = {
-            id:id,
-            name:name,
-            email:email,
-            number:number,
-            designation:designation
+            id: id,
+            name: name,
+            email: email,
+            number: number,
+            designation: designation
         }
     }
 
 
-    edit= (e) => {
+    edit = (e) => {
         console.log(this.props)
         e.preventDefault();
-        const response = api.put(`/directory/${this.state.id}`,this.state);
+        const response = api.put(`/directory/${this.state.id}`, this.state);
         this.props.toGetDirectories(this.state);
         this.props.history.push("/")
     }
@@ -34,7 +34,7 @@ class EditDirectory extends Component {
                     <input type="text" placeholder="Designation" value={this.state.designation} onChange={e => this.setState({ designation: e.target.value })} />
                     <button>Edit Employee</button>
                 </form>
-               <Link to="/"><button >Employee List</button></Link>
+                <Link to="/"><button >Employee List</button></Link>
             </div>
         );
 

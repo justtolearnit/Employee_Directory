@@ -1,30 +1,24 @@
 {
   "directory": [
     {
-      "id": 1,
-      "name": "Pendrive",
-      "email": "pen@drive.com",
-      "designation": "Helper"
+      "name": "Noorfaisal",
+      "email": "email.com",
+      "mobile": "908056425",
+      "designation": "Professor",
+      "id": 1
     },
     {
-      "name": "Rilwan",
-      "email": "",
-      "mobile": "",
-      "designation": "",
-      "id": 12
+      "name": "SalmanThoufiq",
+      "email": "sal@sal.com",
+      "mobile": "9854463546",
+      "designation": "CEO",
+      "id": 2
     },
     {
-      "id": 13,
-      "name": "KSAR.Ahamed",
-      "email": "ahamed@ahamed.com",
-      "designation": "Cute",
-      "mobile": "9845467215"
-    },
-    {
-      "id": 14,
-      "name": "NoorFaisal",
-      "email": "jelly@gmail.com",
-      "designation": "CTI"
+      "id": 3,
+      "name": "MohamedSajith",
+      "email": "muhammedsajith@gmail.com",
+      "designation": "Scientist"
     }
   ]
 }
