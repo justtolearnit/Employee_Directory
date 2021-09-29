@@ -9,29 +9,25 @@ import directory from "./api/directory";
 function App() {
   const [directories, setDirectory] = useState([""])
 
+//posttoapi
+  const addEmployeeData = async (props) => {
+    await api.post("/directory",{...props});
+    toGetDirectories();
+  }
 
-  // getapi
-  const toGetDirectories = async () => {
+   // getapi
+   const toGetDirectories = async () => {
     const response = await api.get("/directory");
     setDirectory(response.data);
   }
-  useEffect(() => {
-    toGetDirectories();
-  }, [])
+
+  useEffect((
+    toGetDirectories
+  ),[])
+
+
   // getapi
   
-
- 
-//Testing just to post to useState
-  const addEmployeeData = (props) => {
-    setDirectory([...directories,props])
-  }
-//Learnt to use this
-//learnt about classcomponents
-//learnt to use array bracket
-
-
-  console.log(directories)
   return (
     <div >
       <UploadDirectory addEmployeeData={addEmployeeData}/>

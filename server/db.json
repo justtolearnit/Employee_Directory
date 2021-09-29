@@ -1,18 +1,95 @@
 {
-    "directory":[
-        {
-            "id":1,
-            "name":"NoorFaisal",
-            "email":"nf@email.com",
-            "number":"34324234",
-            "designation":"CEO"
-        },
-        {
-            "id":2,
-            "name":"SalamnThoufiq",
-            "email":"nf@email.com",
-            "number":"34324234",
-            "designation":"CEO"
-        }
-    ]
+  "directory": [
+    {
+      "name": "SaffrinFathima",
+      "email": "jel@jelly.com",
+      "mobile": "90854251040",
+      "designation": "CEO",
+      "id": 3
+    },
+    {
+      "name": "NoorFaisal",
+      "email": "jus@jus.com",
+      "mobile": "908054",
+      "designation": "Director",
+      "id": 4
+    },
+    {
+      "name": "Rilwan",
+      "email": "",
+      "mobile": "",
+      "designation": "",
+      "id": 5
+    },
+    {
+      "name": "Sajith",
+      "email": "",
+      "mobile": "",
+      "designation": "",
+      "id": 6
+    },
+    {
+      "name": "Ahamed",
+      "email": "",
+      "mobile": "",
+      "designation": "",
+      "id": 7
+    },
+    {
+      "name": "Ibrahim",
+      "email": "",
+      "mobile": "",
+      "designation": "",
+      "id": 8
+    },
+    {
+      "name": "Ibrahim",
+      "email": "",
+      "mobile": "",
+      "designation": "",
+      "id": 9
+    },
+    {
+      "name": "Smayah",
+      "email": "",
+      "mobile": "",
+      "designation": "",
+      "id": 10
+    },
+    {
+      "name": "Hajar",
+      "email": "",
+      "mobile": "",
+      "designation": "",
+      "id": 11
+    },
+    {
+      "name": "Anar",
+      "email": "",
+      "mobile": "",
+      "designation": "",
+      "id": 12
+    },
+    {
+      "name": "Anar",
+      "email": "",
+      "mobile": "",
+      "designation": "",
+      "id": 13
+    },
+    {
+      "name": "Rafi",
+      "email": "",
+      "mobile": "",
+      "designation": "",
+      "id": 14
+    },
+    {
+      "name": "Muhammed",
+      "email": "",
+      "mobile": "",
+      "designation": "",
+      "id": 15
+    }
+  ]
 }
