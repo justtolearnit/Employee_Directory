@@ -41,6 +41,10 @@ then create directory.js
         }
         ]
 }
+
+
+lateron Ideas
+Arranging app.js by rendering Crud through different pages
 <!-- POSTGRESQL OPERATIONS>>>>
  CREATE SEQUENCE employee_sequence INCREMENT 1 START 1;
  CREATE SEQUENCE team_sequence INCREMENT 1 START 1;

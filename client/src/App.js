@@ -3,9 +3,10 @@ import { useEffect } from "react";
 import api from './api/directory';
 import ListDirectory from "./directory/ListDirectory";
 import React from "react";
+import UploadDirectory from "./directory/UploadDirectory";
+import directory from "./api/directory";
 
 function App() {
-
   const [directories, setDirectory] = useState([""])
 
 
@@ -20,15 +21,20 @@ function App() {
   // getapi
   
 
+ 
+//Testing just to post to useState
+  const addEmployeeData = (props) => {
+    setDirectory([...directories,props])
+  }
+//Learnt to use this
+//learnt about classcomponents
+//learnt to use array bracket
+
+
+  console.log(directories)
   return (
     <div >
-      <form>
-        <input type="text" placeholder="Name" />
-        <input type="text" placeholder="Designation" />
-        <input type="text" placeholder="Number" />
-        <input type="text" placeholder="Email" />
-        <button>Add</button>
-      </form >
+      <UploadDirectory addEmployeeData={addEmployeeData}/>
       <ListDirectory directories={directories}/>
     </div>
 
